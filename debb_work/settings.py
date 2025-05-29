@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'debb_work.quickstart',
+    'apps.projects',
+    'apps.team'
 ]
 
 MIDDLEWARE = [
