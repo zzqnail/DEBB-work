@@ -51,3 +51,4 @@ class Task(models.Model):
     reporter = models.ForeignKey(User, on_delete=models.CASCADE, blank=True, null=True, related_name='task_reporter')
     assigned_to = models.ForeignKey(User, on_delete=models.CASCADE, blank=True, null=True, related_name='task_assigned_to')
     parent = models.ForeignKey("self", on_delete=models.CASCADE, blank=True, null=True)
+    project = models.ForeignKey(Project, on_delete=models.CASCADE, blank=True, null=True)
